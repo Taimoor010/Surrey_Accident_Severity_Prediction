@@ -6,55 +6,54 @@ This repository presents a comprehensive data mining and text analytics project 
 
 ## 📊 Project Overview
 
-The project analyses real-world road traffic accident data from Surrey (UK) for 2021, using both structured data and social media text. The primary goals are:
+The project analyses real-world road traffic accident data from Surrey (UK) for 2021 using structured datasets and SAS Viya tools. The goals are:
 
-- Understand and clean the accident dataset (Task 1)
-- Predict accident severity using machine learning models (Task 2)
-- Analyze accident-related tweets using text mining (Task 3)
-- Provide managerial insights and recommendations for road safety (Task 4)
+- Clean and explore the dataset (Task 1)
+- Predict accident severity using machine learning (Task 2)
+- Perform text analysis on related tweets (Task 3)
+- Provide a managerial summary with recommendations (Task 4)
 
 ---
 
 ## 🗂️ Folder Structure
 
-| Folder | Description |
-|--------|-------------|
-| `data/` | Contains original dataset and the data dictionary |
-| `notebooks/` | Markdown reports for Tasks 1–3 with analysis summaries |
-| `reports/` | PDF versions of the technical and managerial reports |
-| `visuals/` | Visualizations and charts used throughout the analysis |
-| `sas_project/` | Screenshots or exported SAS Viya project |
+| Folder         | Description |
+|----------------|-------------|
+| `data/`        | Original dataset and variable guide (CSV format) |
+| `reports/`     | Final combined technical + managerial report (PDF) |
+| `sas_project/` | Exported files from SAS Viya, including model outputs and project files |
+| `visuals/`     | Individual charts and figures such as decision trees, maps, summaries |
 
 ---
 
 ## ⚙️ Tools Used
 
-- **SAS Viya**: Used for data exploration, machine learning, and text analysis  
-- **Excel**: Used for data review and summary statistics
+- **SAS Viya**: Data cleaning, model building, visualizations, and text mining  
+- **Excel**: For quick exploration and supporting tasks
 
 ---
 
 ## 🔍 Key Findings
 
-- Decision Trees outperformed Logistic Regression in predicting severe accidents.
-- Most fatal accidents occurred on rural roads under poor lighting and wet conditions.
-- Sentiment analysis of tweets revealed a dominant negative sentiment around traffic incidents.
+- Decision Trees performed better than Logistic Regression in classifying severe accidents.
+- Fatal accidents were more likely on unlit rural roads under wet conditions.
+- Twitter sentiment was largely negative, focused on delays and incident awareness.
 
 ---
 
 ## 📈 Recommendations
 
-- Improve lighting infrastructure on rural roads.
-- Use predictive insights to inform traffic police deployment.
-- Run targeted awareness campaigns via Twitter during accident-prone hours.
+- Install better lighting on rural roads with high accident rates.
+- Use predictive models to inform police patrolling strategies.
+- Publish timely accident alerts via Twitter and other public channels.
 
 ---
 
 ## 📁 Dataset Info
 
-The dataset is sourced from the UK Department for Transport, filtered for Surrey 2021.
+The dataset is from the UK Department for Transport and includes all personal injury collisions in Surrey during 2021.
 
-Note: Only relevant anonymized data files are uploaded due to restrictions.
+Note: Only anonymized and relevant data files are included.
 
 ---
 
