@@ -1,0 +1,2524 @@
+<!DOCTYPE html>
+<html class="ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS V.04.00" name="generator"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data: ;"/>
+<title>Results:Describe Missing Data.ctk</title>
+<style>
+/*<![CDATA[*/
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c section > table, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c section > pre, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c div > table,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c div > pre, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c article > table, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c article > pre,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j section > table, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j section > pre, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j div > table,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j div > pre, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j article > table, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j article > pre,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c p.note, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c p.warning, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c p.error, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c p.fatal,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j p.note, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j p.warning, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j p.error, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j p.fatal,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.c > table.layoutcontainer, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.l table, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.l pre, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.l p.note,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.l p.warning, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.l p.error, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.l p.fatal { margin-left: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.c table, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.c pre, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.c p.note,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.c p.warning, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.c p.error, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.r table, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.r pre, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.r p.note,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.r table, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.r pre, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.r p.note,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.r p.warning, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.r p.error, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion.r p.fatal { margin-right: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 article, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 aside, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 details, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 figcaption, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 figure, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 footer, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 header, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 hgroup, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 nav, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 section { display: block }
+html.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 { font-size: 100% }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 ul, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 dd { margin: 0 0 0 40px }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 nav ul, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 img { border: 0; vertical-align: middle }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 svg:not(:root) { overflow: hidden }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 figure { margin: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 table { border-collapse: collapse; border-spacing: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 p { margin-top: 0; text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 h1.heading1 { text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 h2.heading2 { text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 h3.heading3 { text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 h4.heading4 { text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 h5.heading5 { text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 h6.heading6 { text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 span { text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 table { margin-bottom: 1em }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 td, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 td[class$="fixed"], .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 th[class$="fixed"] { white-space: pre }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 section, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 article { padding-top: 1px; padding-bottom: 8px }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .stacked-value { text-align: left; display: block }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .stacked-cell > .stacked-value, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 td.data > td.data, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 th.data > td.data, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 th.data > th.data, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 td.data > th.data, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 th.header > th.header { border: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .stacked-cell > div.data { border-width: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > p { margin: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .batch { display: table }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .toc { display: none }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .proc_note_group, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .proc_title_group { margin-bottom: 1em }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 p.proctitle { margin: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 p.note, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 p.warning, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 p.error, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 p.fatal { display: table }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .notebanner, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .warnbanner, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .errorbanner, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .fatalbanner,
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .notecontent, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .warncontent, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .errorcontent, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .notebanner, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .warnbanner, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .errorbanner, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .fatalbanner { padding-right: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body > div > ol li { text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .c { text-align: center }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .r { text-align: right }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .l { text-align: left }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .j { text-align: justify }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .d { text-align: right }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .b { vertical-align: bottom }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .m { vertical-align: middle }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .t { vertical-align: top }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .accessiblecaption {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 a:active { color: #626f80 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .aftercaption {
+    background-color: #ffffff;
+    border-spacing: 0;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .batch > colgroup {
+    border-left: 1px solid #696969;
+    border-right: 1px solid #696969;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .batch > tbody, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .batch > thead, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .batch > tfoot {
+    border-top: 1px solid #696969;
+    border-bottom: 1px solid #696969;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .batch { border: hidden; }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .batch {
+    background-color: #ffffff;
+    border: 1px solid #696969;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #2a3037;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .beforecaption {
+    background-color: #ffffff;
+    border-spacing: 0;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .body {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bodydate {
+    background-color: #ffffff;
+    border-spacing: 0;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bycontentfolder {
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .byline {
+    background-color: #ffffff;
+    border-spacing: 0;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bylinecontainer > col, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bylinecontainer > colgroup > col, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bylinecontainer > colgroup, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bylinecontainer > tr, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bylinecontainer > * > tr, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bylinecontainer > thead, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bylinecontainer > tbody, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bylinecontainer > tfoot { border: none; }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .bylinecontainer {
+    background-color: #ffffff;
+    border: none;
+    border-spacing: 1px;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .caption {
+    background-color: #ffffff;
+    border-spacing: 0;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .cell, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .container {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .contentfolder, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .contentitem {
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .contentproclabel, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .contentprocname {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .contents {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .contentsdate {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .contenttitle {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .continued {
+    background-color: #ffffff;
+    border-spacing: 0;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .data {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .dataempty {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .datafixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .datastrong {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .datastrongfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .date {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .document {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .errorbanner {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .errorcontent {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .errorcontentfixed {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Courier New', Courier;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .extendedpage {
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1pt;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .fatalbanner {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .fatalcontent {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .fatalcontentfixed {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Courier New', Courier;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .folderaction {
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .footer {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .footeremphasis {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .footeremphasisfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .footerempty {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .footerfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .footerstrong {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .footerstrongfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .frame {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .graph > colgroup {
+    border-left: 1px solid #696969;
+    border-right: 1px solid #696969;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .graph > tbody, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .graph > thead, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .graph > tfoot {
+    border-top: 1px solid #696969;
+    border-bottom: 1px solid #696969;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .graph { border: hidden; }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .graph {
+    background-color: #ffffff;
+    border: 1px solid #696969;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .header {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .headeremphasis {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .headeremphasisfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .headerempty {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .headerfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .headersandfooters {
+    background-color: #ffffff;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .headerstrong {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .headerstrongfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .heading1 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 24pt;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .heading2 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 18pt;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .heading3 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .heading4 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .heading5 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .heading6 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .index {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .indexaction, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .indexitem {
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .indexprocname {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .indextitle {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutcontainer, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .linecontent {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 a:link { color: #525f70 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list10 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list2 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list3, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list4, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list5, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list6, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list7, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list8, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .list9 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem10 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem2 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem3, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem4, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem5, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem6, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem7, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem8, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .listitem9 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .note {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .notebanner {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .notecontent {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .notecontentfixed {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Courier New', Courier;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .output > colgroup {
+    border-left: 1px solid #696969;
+    border-right: 1px solid #696969;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .output > tbody, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .output > thead, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .output > tfoot {
+    border-top: 1px solid #696969;
+    border-bottom: 1px solid #696969;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .output { border: hidden; }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .output {
+    background-color: #ffffff;
+    border: 1px solid #696969;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .pageno {
+    background-color: #ffffff;
+    border-spacing: 0;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .pages {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .pagesdate {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .pagesitem {
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .pagesproclabel, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .pagesprocname {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .pagestitle {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .paragraph {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .parskip > col, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .parskip > colgroup > col, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .parskip > colgroup, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .parskip > tr, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .parskip > * > tr, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .parskip > thead, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .parskip > tbody, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .parskip > tfoot { border: none; }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .prepage {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .proctitle {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .proctitlefixed {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowfooter {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowfooteremphasis {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowfooteremphasisfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowfooterempty {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowfooterfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowfooterstrong {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowfooterstrongfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowheader {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowheaderemphasis {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowheaderemphasisfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowheaderempty {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowheaderfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowheaderstrong {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .rowheaderstrongfixed {
+    background-color: #ffffff;
+    border: 1px solid #ebedef;
+    color: #2a3037;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter10, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter2, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter3, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter4, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter5, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter6, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter7, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter8, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemfooter9 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle10, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle2, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle3, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle4, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle5, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle6, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle7, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle8, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systemtitle9 {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > col, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > colgroup > col, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > colgroup, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > tr, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > * > tr, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > thead, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > tbody, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer > tfoot { border: none; }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .systitleandfootercontainer {
+    background-color: #ffffff;
+    border: none;
+    border-spacing: 1px;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .table > col, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .table > tr, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .table { border: hidden; }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titleandnotecontainer > col, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titleandnotecontainer > colgroup > col, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titleandnotecontainer > colgroup, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titleandnotecontainer > tr, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titleandnotecontainer > * > tr, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titleandnotecontainer > thead, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titleandnotecontainer > tbody, .ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titleandnotecontainer > tfoot { border: none; }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titleandnotecontainer {
+    background-color: #ffffff;
+    border: none;
+    border-spacing: 1px;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .titlesandfooters {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .usertext {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 a:visited { color: #626f80 }
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .warnbanner {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .warncontent {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Avenir Next for SAS', Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2 .warncontentfixed {
+    background-color: #ffffff;
+    color: #696969;
+    font-family: 'Courier New', Courier;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_01D260E1-8ACB-3A4C-871A-AEB1AD24B4E2" class="c body">
+<h1 class="body toc">Results:Describe Missing Data.ctk</h1>
+<section data-name="Freq" data-sec-type="proc">
+<div id="IDX" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle3">Missing Data Frequencies</span> </p>
+<p><span class="c systemtitle4" style="font-size: x-small">Legend: ., A, B, etc = Missing</span> </p>
+</div>
+<h1 class="contentprocname toc">The Freq Procedure</h1>
+<section>
+<h1 class="contentfolder toc">Table time</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">time</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX1">
+<h1 class="contentfolder toc">Table Row</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">Row</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX2">
+<h1 class="contentfolder toc">Table acci_ref</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">acci_ref</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX3">
+<h1 class="contentfolder toc">Table loc_east_osgr</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">loc_east_osgr</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">.</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX4">
+<h1 class="contentfolder toc">Table loc_nor_osgr</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">loc_nor_osgr</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX5">
+<h1 class="contentfolder toc">Table longitude</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">longitude</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">.</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX6">
+<h1 class="contentfolder toc">Table latitude</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">latitude</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">.</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX7">
+<h1 class="contentfolder toc">Table police_force</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">police_force</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">.</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX8">
+<h1 class="contentfolder toc">Table acci_severity</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">acci_severity</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">.</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX9">
+<h1 class="contentfolder toc">Table num_of_vehi</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">num_of_vehi</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">.</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX10">
+<h1 class="contentfolder toc">Table num_of_casu</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">num_of_casu</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">.</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX11">
+<h1 class="contentfolder toc">Table date</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">date</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">.</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX12">
+<h1 class="contentfolder toc">Table day_of_week</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">day_of_week</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">.</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX13">
+<h1 class="contentfolder toc">Table local_auth_distr</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">local_auth_distr</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX14">
+<h1 class="contentfolder toc">Table loc_auth_ons_distr</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">loc_auth_ons_distr</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX15">
+<h1 class="contentfolder toc">Table loc_auth_highw</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">loc_auth_highw</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">0.04</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Non-missing</th>
+<td class="r data">2479</td>
+<td class="r data">99.96</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX16">
+<h1 class="contentfolder toc">Table first_road_class</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">first_road_class</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX17">
+<h1 class="contentfolder toc">Table first_road_num</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">first_road_num</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX18">
+<h1 class="contentfolder toc">Table road_type</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">road_type</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX19">
+<h1 class="contentfolder toc">Table speed_limit</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">speed_limit</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX20">
+<h1 class="contentfolder toc">Table junc_detail</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">junc_detail</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX21">
+<h1 class="contentfolder toc">Table junc_con</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">junc_con</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX22">
+<h1 class="contentfolder toc">Table sec_road_class</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">sec_road_class</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX23">
+<h1 class="contentfolder toc">Table sec_road_num</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">sec_road_num</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX24">
+<h1 class="contentfolder toc">Table ped_cross_hum_con</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">ped_cross_hum_con</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX25">
+<h1 class="contentfolder toc">Table ped_cross_phy_facil</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">ped_cross_phy_facil</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX26">
+<h1 class="contentfolder toc">Table light_con</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">light_con</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX27">
+<h1 class="contentfolder toc">Table weath_con</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">weath_con</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX28">
+<h1 class="contentfolder toc">Table road_surf_con</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">road_surf_con</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX29">
+<h1 class="contentfolder toc">Table spec_con_site</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">spec_con_site</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX30">
+<h1 class="contentfolder toc">Table carri_haz</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">carri_haz</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX31">
+<h1 class="contentfolder toc">Table urb_or_rur_area</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">urb_or_rur_area</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX32">
+<h1 class="contentfolder toc">Table did_poli_offi_att</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">did_poli_offi_att</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX33">
+<h1 class="contentfolder toc">Table tru_road_flag</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">tru_road_flag</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX34">
+<h1 class="contentfolder toc">Table lsoa_of_acc_loc</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">lsoa_of_acc_loc</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX35">
+<h1 class="contentfolder toc">Table hour_of_day</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">hour_of_day</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX36">
+<h1 class="contentfolder toc">Table time_category</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">time_category</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Non-missing</th>
+<td class="r data">2480</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX37" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle3">Missing Data Patterns across Variables</span> </p>
+<p><span class="c systemtitle4" style="font-size: x-small">Legend: ., A, B, etc = Missing</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK._MISSINGDATA_">
+<h1 class="contentitem toc">Data Set WORK._MISSINGDATA_</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK._MISSINGDATA_">
+<caption aria-label="Data Set WORK._MISSINGDATA_"></caption>
+<colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">time</th>
+<th class="r header" scope="col">Row</th>
+<th class="r header" scope="col">acci_ref</th>
+<th class="r header" scope="col">loc_east_osgr</th>
+<th class="r header" scope="col">loc_nor_osgr</th>
+<th class="r header" scope="col">longitude</th>
+<th class="r header" scope="col">latitude</th>
+<th class="r header" scope="col">police_force</th>
+<th class="r header" scope="col">acci_severity</th>
+<th class="r header" scope="col">num_of_vehi</th>
+<th class="r header" scope="col">num_of_casu</th>
+<th class="r header" scope="col">date</th>
+<th class="r header" scope="col">day_of_week</th>
+<th class="r header" scope="col">local_auth_distr</th>
+<th class="header" scope="col">loc_auth_ons_distr</th>
+<th class="header" scope="col">loc_auth_highw</th>
+<th class="r header" scope="col">first_road_class</th>
+<th class="r header" scope="col">first_road_num</th>
+<th class="r header" scope="col">road_type</th>
+<th class="r header" scope="col">speed_limit</th>
+<th class="r header" scope="col">junc_detail</th>
+<th class="r header" scope="col">junc_con</th>
+<th class="r header" scope="col">sec_road_class</th>
+<th class="r header" scope="col">sec_road_num</th>
+<th class="r header" scope="col">ped_cross_hum_con</th>
+<th class="r header" scope="col">ped_cross_phy_facil</th>
+<th class="r header" scope="col">light_con</th>
+<th class="r header" scope="col">weath_con</th>
+<th class="r header" scope="col">road_surf_con</th>
+<th class="r header" scope="col">spec_con_site</th>
+<th class="r header" scope="col">carri_haz</th>
+<th class="r header" scope="col">urb_or_rur_area</th>
+<th class="r header" scope="col">did_poli_offi_att</th>
+<th class="r header" scope="col">tru_road_flag</th>
+<th class="header" scope="col">lsoa_of_acc_loc</th>
+<th class="r header" scope="col">hour_of_day</th>
+<th class="header" scope="col">time_category</th>
+<th class="r header" scope="col">Frequency</th>
+<th class="r header" scope="col">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">.</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">1</td>
+<td class="r data">0.0403</td>
+</tr>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">1</td>
+<td class="r data">0.0403</td>
+</tr>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">.</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">1</td>
+<td class="r data">0.0403</td>
+</tr>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">.</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">1</td>
+<td class="r data">0.0403</td>
+</tr>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">.</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">1</td>
+<td class="r data">0.0403</td>
+</tr>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">.</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">1</td>
+<td class="r data">0.0403</td>
+</tr>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">.</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">1</td>
+<td class="r data">0.0403</td>
+</tr>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">.</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">1</td>
+<td class="r data">0.0403</td>
+</tr>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data"> &#160;</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">1</td>
+<td class="r data">0.0403</td>
+</tr>
+<tr>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">Non-missing</td>
+<td class="data">Non-missing</td>
+<td class="r data">2471</td>
+<td class="r data">99.6371</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+</body>
+</html>
