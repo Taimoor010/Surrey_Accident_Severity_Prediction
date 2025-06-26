@@ -30,6 +30,7 @@ The project analyses real-world road traffic accident data from Surrey (UK) for 
 
 - **SAS Viya**: Data cleaning, model building, visualizations, and text mining  
 - **Excel**: For quick exploration and supporting tasks
+![Made with SAS](https://img.shields.io/badge/Built%20With-SAS-blueviolet)
 
 ---
 
